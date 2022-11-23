@@ -1,0 +1,130 @@
+*, ::before, ::after{margin: 0%; box-sizing: border-box;}
+a{text-decoration: none;}
+img{vertical-align: bottom;}
+button{cursor: pointer;}
+:disabled{cursor: not-allowed;}
+@font-face{font-family: pb; src: url(../fonts/proxima-nova-bold.woff2) format("woff2");}
+@font-face{font-family: pr; src: url(../fonts/proxima-nova-regular.woff2);}
+@font-face{font-family: pt; src: url(../fonts/Proxima-Nova-Thin.woff2);}
+h1, h2, h3, h4, b, th, strong{font-family: pb, sans-serif;}
+body{font-family: pt, sans-serif;}
+
+.container{width: 1200px; margin: auto; padding: 0 15px;}
+.row{display: flex; flex-flow: row wrap; margin: 0 -15px;}
+.row [class^="col"]{flex: 1 1 auto; padding: 0 15px;}
+
+.row .col-1{flex-basis: 8.33%;}
+.row .col-2{flex-basis: 16.66%;}
+.row .col-3{flex-basis: 25%;}
+.row .col-4{flex-basis: 33.33%; max-width: 33.33%;}
+.row .col-5{flex-basis: 41.66%;}
+.row .col-6{flex-basis: 50%;}
+.row .col-7{flex-basis: 58.33%;}
+.row .col-8{flex-basis: 66.66%; max-width: 66.66%;}
+.row .col-9{flex-basis: 75%;}
+.row .col-10{flex-basis: 83.33%;}
+.row .col-11{flex-basis: 91.66%;}
+.row .col-12{flex-basis: 100%;}
+
+/* LAYOUT */
+.bgc1 .row{align-items: center;}
+.bgc1{background: #000; color: #fff; position: fixed; top: 0%; left: 0%; right: 0%; z-index: 1; line-height: 80px;}
+h1{font-size: 30px;}
+h1 a{color: inherit; display: inline-block;}
+nav{margin-left: -20px;}
+nav ul{list-style: none; padding: 0%; display: flex;}
+nav ul li{margin: 0 5px;}
+nav ul li a{color: inherit; font-family: pr, sans-serif; padding: 0 15px; display: block;}
+nav ul li a:hover{color: #42b8dd;}
+.btn{background: none; color: #42b8dd; border: 2px solid; width: 90px; height: 35px; border-radius: 10px; font: 16px pr, sans-serif;}
+.bgc1 .btn{float: right;}
+
+.bgc2, .bgc6, .bgc8{background: #666; color: #fff;}
+.video{display: flex; height: 900px; align-items: center;}
+.video button{font-size: 150px; background: none; border: none; color: inherit; margin-right: 40px;}
+.video button:active{color: #42b8dd;}
+.video p.vletme{font: 60px pt, sans-serif;}
+.video a{color: #42b8dd; font-family: pr, sans-serif;}
+
+.bgc3, .bgc10{background: #42b8dd; color: #fff;}
+h2{font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-top: -6px;}
+.bgc3{padding: 50px;}
+.feature{display: flex; align-items: center;}
+.circle{border: 2px solid; width: 100px; height: 100px; border-radius: 50%; text-align: center; margin-right: 30px; flex-shrink: 0;}
+.circle span.fa{font-size: 36px; line-height: 100px;}
+h3{font-size: 16px; line-height: 30px; margin-top: -15px;}
+.bgc3 p{font-size: 14px; line-height: 22px;}
+.bgc3 .col-6:nth-child(3){margin-top: 60px;}
+.bgc3 .col-6:nth-child(4){margin-top: 60px;}
+
+.bgc4{color: #42b8dd; font-size: 36px; line-height: 60px; text-align: center; padding: 45px 0;}
+
+.bgc5, .bgc12{background: #ebebeb;}
+.bgc5 h2, .bgc7 h2, .bgc9 h2, .bgc12 h2{padding-top: 100px; color: #363636;}
+.bgc5 .btn{margin: 30px 0 60px;}
+.bgc5 .btn.active{background: #42b8dd; color: #fff; border: #42b8dd;}
+.bgc5 .btn:nth-child(2), .bgc5 .btn:nth-child(2){}
+.ourworks{position: relative; margin-bottom: 30px; overflow: hidden;}
+.ourworks .ourworkshover{background: #fff; text-align: center; position: absolute; left: 0; right: 0; bottom: -100px; height: 100px; transition: 500ms;}
+.ourworkshover h3{font-size: 18px; line-height: 60px; margin-top: 0px; color: #42b8dd;}
+.ourworkshover p{font-size: 14px; line-height: 60px; margin-top: -21px; color: #898989;}
+.ourworks:hover .ourworkshover{bottom: 0%;}
+.bgc5 .plus{border: none; font-size: 36px; line-height: 60px; color: #42b8dd; background: none; margin: -13px 0 127px -4px;}
+
+.bgc6{text-align: center; padding: 52px 0 22px 0;}
+.justify{justify-content: center;}
+.bgc6 q{font-size: 36px; line-height: 41px;}
+.slider .slide{display: none;}
+.slider .slide.active{display: block;}
+.slider img{margin-top: 23px; border-radius: 50%;}
+.bgc6 p{font-family: pb, sans-serif; line-height: 41px;}
+.pager{list-style: none; padding: 0%; margin-bottom: -0.2px;}
+.pager li{display: inline-block;}
+.pager li a{display: inline-block; border: 2px solid #fff; width: 10px; height: 10px; border-radius: 50%;}
+.pager li a.active{background: #fff;}
+
+.ourteaminfo{margin-top: 80px; position: relative;}
+.social{font-size: 24px; line-height: 60px; position: absolute; top: 60px; left: 140px;}
+.social ul{list-style: none; padding: 0%; display: flex;}
+.social ul li a{display: block; background: #42b8dd; color: #fff; width: 50px; height: 50px; border-radius: 50%; text-align: center; line-height: 50px;}
+.bgc7 .col-4 .social ul li:nth-child(2){margin-left: 10px;}
+.bgc7 .col-4 .social ul li:nth-child(3){margin-left: 10px;}
+.team{margin: 50px 0 0 100px; border: #f500df solid;}
+.team h3{font-size: 18px; line-height: 60px; color: #42b8dd; margin-bottom: -30px;}
+.team small{font-size: 14px; line-height: 60px; color: #898989;}
+.team p{font-size: 14px; line-height: 22px; color: #363636;}
+.plus{border: none; font-size: 36px; line-height: 60px; color: #42b8dd; background: none; margin: 35px 0 126px -4px;}
+
+.bgc8{padding: 69.8px 0; text-align: center;}
+.bgc8 span{font-size: 72px; line-height: 41px; margin-top: 16px;}
+.bgc8 p{font-size: 72px; line-height: 41px; margin: 42px 0 20px 0;}
+.bgc8 b{font-size: 18px; line-height: 41px;}
+
+.ourskillsinfo{margin: 80px 0 50px 0; display: flex;}
+.team2 h3{font-size: 18px; line-height: 60px; color: #42b8dd; margin: 0 0 30px 100px;}
+.team2 p{font-size: 14px; line-height: 22px; color: #363636; margin-left: 100px; margin-bottom: 140px;}
+
+.bgc10 .btn2{margin-top: 23px;}
+.bgc10 form{display: flex; justify-content: space-between;}
+.bgc10 form input{font: 36px pt, sans-serif; line-height: 41px; background: none; color: #fff; border: none; outline: none; padding: 19.5px 0 19.5px 0;}
+.bgc10 form input::placeholder{font-size: 36px; line-height: 41px; background: none; color: #fff; border: none; outline: none; padding: 19.5px 0 19.5px 0;}
+.btn2{font-size: 16px pr, sans-serif; color: #42b8dd; background: #fff; border: #fff; width: 90px; height: 35px; border-radius: 10px;}
+
+.bgc11{background: #7f7f7f; padding: 28px 0 27px 6px;}
+.bgc11 .box{background: #a6a6a6; width: 170px; height: 95px;}
+
+.bgc12{padding-bottom: 80.7px;}
+address{font-family: pr, sans-serif; font-style: normal; line-height: 30px; color: #898989; margin-top: 42px;}
+.social2 ul{list-style: none; padding: 0%; display: flex; margin: 30px 0 50px 0;}
+.social2 ul li a{display: block; color: #42b8dd; font-size: 16.22px; line-height: 22.3px; border: 2px solid blueviolet; margin-left: 20px;}
+.social2 ul li a:nth-child(){margin-left: 0px;}
+.bgc12 form label{display: block; border: 2px solid #363636; padding-left: 10px; font-family: pb, sans-serif; margin-bottom: 30px;}
+.bgc12 form label input{border: none; background: none; margin: 18px 0 17px 0;}
+.bgc12 form label textarea{border: none; background: none; vertical-align: top; resize: none; height: 80px;}
+.bgc12 form button{border: #fff; background: #fff; width: 100%; height: 84px; border-radius: 10px; color: #42b8dd; font: 16px pr, sans-serif; line-height: 41px;}
+.bgc12 form button span.fa{font-size: 36px; line-height: 41px; vertical-align: middle; margin-right: 10px;}
+
+.bgc13{background: #252525; text-align: center; padding-top: 56px;}
+.bgc13 h3{color: #fff; font-size: 30px;}
+.bgc13 .p2{color: #555; font-size: 14px; line-height: 22px;}
+.bgc13 span{color: #42b8dd; font-size: 36px; line-height: 60px;}
